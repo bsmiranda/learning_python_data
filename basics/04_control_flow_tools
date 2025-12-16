@@ -1,0 +1,42 @@
+revenue = 25000
+
+if revenue >= 20000:
+    print("Good month")
+else:
+    print("Needs improvement")
+
+# Real example (Sales Analytics)
+average_deal = 3200
+
+if average_deal >= 5000:
+    print("Enterprise-oriented sales")
+elif average_deal >= 2000:
+    print("Mid-market sales")
+else:
+    print("SMB sales")
+
+# For loop — analyzing various data
+deals = [1200, 4500, 800, 15000]
+
+for deal in deals:
+    print(deal)
+
+# Real example (deal analysis): this is revenue segmentation, a central concept in RevOps
+deals = [1200, 4500, 800, 15000]
+
+for deal in deals:
+    if deal >= 5000:
+        print(deal, "- High value deal")
+    else:
+        print(deal, "- Standard deal")
+
+# For + logic + metrics (analyst level)
+deals = [1200, 4500, 800, 15000, 3000]
+
+high_value_deals = 0
+
+for deal in deals:
+    if deal >= 5000:
+        high_value_deals += 1
+
+print("High value deals:", high_value_deals)
